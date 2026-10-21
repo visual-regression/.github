@@ -8,24 +8,26 @@
 
 <p align="center">Bringing visual regression tools together.</p>
 
-## Our mission
+## Mission
 
-Visual regression testing is split across many tools: each one captures, compares and reports screenshots in its own way, and none of them can read another's results. We want to change that.
+Every visual regression tool captures, compares, and reports screenshots in its own format, so a run from one tool can't be read by another. We want the tools to share their results.
 
-We maintain [visual-regression.dev](https://visual-regression.dev), a vendor-neutral place to learn visual regression testing and compare the tools, and a shared run manifest format so that the tools can exchange their results:
+We run [visual-regression.dev](https://visual-regression.dev), a vendor-neutral site for learning visual regression testing and comparing the tools. We also maintain a shared run manifest format and two packages built on it:
 
-- [`visual-regression-manifest`](https://github.com/visual-regression/visual-regression/tree/main/packages/visual-regression-manifest): the manifest format (JSON Schema, TypeScript types, reader, writer, merger) and converters from other tools' output.
-- [`visual-regression-viewer`](https://github.com/visual-regression/visual-regression/tree/main/packages/visual-regression-viewer): a command that reads the manifests of a run and serves a review page for it, or writes it to a folder.
+- [`visual-regression-manifest`](https://github.com/visual-regression/visual-regression/tree/main/packages/visual-regression-manifest) holds the manifest format (JSON Schema, TypeScript types, reader, writer, and merger) and converters from other tools' output.
+- [`visual-regression-viewer`](https://github.com/visual-regression/visual-regression/tree/main/packages/visual-regression-viewer) reads the manifests of a run, then serves a review page for it or writes the page to a folder.
 
 ## How to help
 
-- **Help with development.** Pick an issue, fix a bug or improve the docs in the [visual-regression repository](https://github.com/visual-regression/visual-regression). See [CONTRIBUTING.md](https://github.com/visual-regression/visual-regression/blob/main/CONTRIBUTING.md) to get started.
-- **Propose integrations.** Maintain a visual regression tool, or use one that is missing? Add a converter from its output to a manifest, or open an issue and tell us what you need.
-- **Shape the manifest standard.** The manifest format is only useful if it fits every tool. Propose changes, point out what your tool cannot express, or open a discussion about where the format should go.
+Everything lives in the [visual-regression repository](https://github.com/visual-regression/visual-regression). [CONTRIBUTING.md](https://github.com/visual-regression/visual-regression/blob/main/CONTRIBUTING.md) explains how to get started.
+
+- Help with development. Fix a bug, improve the docs, or pick up an open [issue](https://github.com/visual-regression/visual-regression/issues).
+- Propose integrations. If you maintain a visual regression tool, add a converter from its output to a manifest. If your tool is missing from the comparison, open an issue.
+- Propose changes to the manifest standard. If the format can't express something your tool produces, start a [discussion](https://github.com/visual-regression/visual-regression/discussions) or send a pull request.
 
 ## Support us financially
 
-Our work is open source and maintained in our free time. If it saves you time, you can support it through [FRSOURCE](https://github.com/FRSOURCE):
+The packages and the site are open source. You can fund the work through [FRSOURCE](https://github.com/FRSOURCE):
 
 - [GitHub Sponsors](https://github.com/sponsors/FRSOURCE)
 - [Patreon](https://www.patreon.com/frsource)
